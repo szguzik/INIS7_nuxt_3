@@ -9,15 +9,18 @@
 
     <!-- Zawartość strony zostanie wstrzyknięta tutaj -->
     <main>
-      <slot />
+      <div class="container">
+        <slot />
+      </div>
     </main>
 
     <!-- Możesz dodać stopkę -->
-    <footer>
-      <h3>to jest stopka</h3>
-      <!-- Stopka -->
-    </footer>
+
   </div>
+  <footer>
+    <h3>to jest stopka</h3>
+    <!-- Stopka -->
+  </footer>
 </template>
 
 <script setup>
@@ -27,12 +30,11 @@
 <style scoped lang="scss">
 /* Style CSS dla layoutu */
 .bos_bg {
-  background-color: blue;
-
   nav {
     background-color: dodgerblue;
     width: 100%;
-    color: white
+    color: white;
+    border-bottom: 2px solid yellow;
   }
 }
 </style>

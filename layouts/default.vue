@@ -1,35 +1,39 @@
 <template>
-  <div class="def_bg">
-    <!-- Możesz dodać pasek nawigacji -->
+  <div>
     <header>
-      <nav>
+        <TopInfo />
         <TopNav/>
-      </nav>
     </header>
-
-    <!-- Zawartość strony zostanie wstrzyknięta tutaj -->
     <main>
-      <slot />
+      <div class="container">
+        <slot />
+      </div>
     </main>
-
-    <!-- Możesz dodać stopkę -->
-    <footer>
-      <!-- Stopka -->
-    </footer>
   </div>
+  <footer class="footer">
+    <div class="container has-text-centered">
+      <p>
+        <strong>Example Site</strong> by <a href="https://example.com">Your Name</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </footer>
 </template>
 
 <script setup>
-// Tu można dodać logikę JavaScript
+
 </script>
 
-<style lang="scss">
-/* Style CSS dla layoutu */
-.def_bg {
-  nav {
-    background-color: black;
-    width: 100%;
-    color: chartreuse;
+<style scoped lang="scss">
+.footer {
+  background-color: #363636; /* Dark background */
+  color: white; /* White text color */
+
+  strong,
+  a {
+    color: #F5F5F5; /* Lighter color for links */
   }
 }
+
 </style>

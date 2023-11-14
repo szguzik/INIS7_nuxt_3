@@ -3,7 +3,6 @@
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
-    {{ data }}
   </div>
 </template>
 <script setup>
